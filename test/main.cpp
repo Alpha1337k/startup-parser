@@ -7,5 +7,5 @@ int main(int argc, char **argv)
 {
 	sp = StartupParser(argc, argv);
 	
-	std::cout << *sp["data"] << std::endl;
+	std::cout << sp["data"] << "/" << sp.last().second << std::endl;
 }
